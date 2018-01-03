@@ -1,12 +1,9 @@
 /* ******************************************* */
 /* Navigation Bar and Header */
 /* ******************************************* */
-/*.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover {
-  background-color: inherit;
-  color: #399bd1;
-  color: blue;
-}*/
+.navbar {
+  background-color: blue;
+}
 
 .navbar-default .navbar-nav a {
  /*font-family: "Open Sans";*/
@@ -20,14 +17,6 @@
   }
 }
 
-nav .navbar-nav {
-  /*margin-left: 1000px;*/
-}
-
-/*nav img {
-  width: 300px;
-  height: 200px;
-}*/
 
 
 /* ******************************************* */
@@ -54,10 +43,10 @@ nav .navbar-nav {
 /* ******************************************* */
 .container-fluid.about {
   margin-top: -33px;
-  padding-left: 0px;
+  /*padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 0px;*/
 }
 
 .container img {
@@ -66,39 +55,149 @@ nav .navbar-nav {
 }
 
 .container-fluid .about-me-text {
-  background-color: blue;
+  color: #0D122B;
+  margin-top: 100px
 }
 
 .container .about-me-pic {
   /*width: 1000px;*/
 }
 
-/*.nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
-}*/
-/*.container .pic {
-  width: 100%;
-}*/
-/*.no-padding {
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}*/
-/*.col-xs-1,.col-sm-1,.col-lg-1,.col-md-1,.col-xs-2,.col-sm-2,.col-lg-2,.col-md-2,.col-xs-3,.col-sm-3,.col-lg-3,.col-md-3,.col-xs-4,.col-sm-4,.col-lg-4,.col-md-4,.col-xs-5,.col-sm-5,.col-lg-5,.col-md-5,.col-xs-6,.col-sm-6,.col-lg-6,.col-md-6,.col-xs-7,.col-sm-7,.col-lg-7,.col-md-7,.col-xs-8,.col-sm-8,.col-lg-8,.col-md-8,.col-xs-9,.col-sm-9,.col-lg-9,.col-md-9,.col-xs-10,.col-sm-10,.col-lg-10,.col-md-10,.col-xs-11,.col-sm-11,.col-lg-11,.col-md-11,.col-xs-12,.col-sm-12,.col-lg-12,.col-md-12
-{ padding-left:0; padding-right:0;}*/
+.about-button {
+  font-size: 20px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #0D122B;
+}
 
 
 /* ******************************************* */
 /* Experience */
 /* ******************************************* */
 .experience  {
-  /*padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;*/
-  /*width: 1000px;*/
-  /*display: flex;*/
+  padding-top: 50px;
+  padding-bottom: 200px;
+  height: 300px;
   background-color: #0D122B;
+}
+
+.experience p {
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+}
+
+.experience .row{
+  margin-top: 50px;
+}
+
+.experience-button {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* ******************************************* */
+/* Contact */
+/* ******************************************* */
+.contact {
+  margin-top: 50px;
+}
+
+.contact p {
+  color: #0D122B;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer-social-icons {
+  display: block;
+  padding-top: 45px;
+}
+
+.social-icons {
+  color: #fff;
+}
+
+.social-icons li {
+  display: inline;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+}
+
+
+.fa-linkedin {
+  padding: 10px 14px;
+  margin-right: 20px;
+  margin-left: -50px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 12px;
+  border: 1px solid #0073a4;
+  color: #0073a4;
+}
+
+.fa-linkedin:hover {
+  background-color: #0073a4;
+  border: 1px solid #3d5b99;
+  border-radius: 12px;
+  color: #FFFFFF;
+}
+
+.fa-github {
+    padding: 10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    border: 1px solid #3d5b99;
+    border-radius: 12px;
+    color: #3d5b99;
+}
+
+.fa-github:hover {
+    background-color: #3d5b99;
+    border: 1px solid #3d5b99;
+    border-radius: 12px;
+    color: #FFFFFF;
+}
+
+
+/* ******************************************* */
+/* Footer */
+/* ******************************************* */
+.footer {
+  position: absolute;
+  right: 0;
+  /*bottom: 0;*/
+  left: 0;
+  padding: 1rem;
+  background-color: #0D122B;
+}
+
+footer .footer .fa-linkedin {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 12px;
+  border: 1px solid #0073a4;
+  color: #0073a4;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0px;
 }
