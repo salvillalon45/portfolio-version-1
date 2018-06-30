@@ -29,7 +29,8 @@ Salvador Villalon
     <link href= "./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
-    <link href= "./resources/css/style.css" type="text/css" rel="stylesheet">
+    <link href= "./resources/css/index.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
   <body>
 
@@ -76,18 +77,48 @@ Salvador Villalon
     <!-- ******************************************* -->
     <!-- About Me -->
     <!-- ******************************************* -->
+    <!-- <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <img class="img-responsive" src="./resources/images/height_400_salvador_about_me.png">
+        </div>
+      </div>
+    </div> -->
     <div class="container-fluid" id="about">
       <div class="row">
-        <div class="about-me-pic">
-            <img class="img-responsive" src="./resources/images/height_400_salvador_about_me.png">
+        <div class=" about-me-pic">
+            <img style="float:left; height:600px" class="img-responsive" src="./resources/images/height_400_salvador_about_me.png">
+            <!-- <div class="about-me-text text-center">
+              <div class="tag">HELLO, MY NAME IS</div>
+              <br>
+              <h1 class="name-title">Salvador Villalon and I am an Aspiring Software Engineer</h1>
+              <br>
+              <p>I’m a Computer Science student at the University of California, Irvine with drive for learning all things Technology.</p>
+              <p>I have a passion for always learning something new. I believe that life is like a video game. As you progress though life you get experience points</p>
+              <p>that help you create and innovate new ideas and applications that help people and organizations move forward.</p>
+              <p>Click on the button to learn how I became interested in technology and one of my favorite quotes that guides me everyday.</p>
+              <a class="btn btn btn-light about-button" href="about.html" role="button">Learn More</a>
+            </div> -->
         </div>
-        <div class="col-md-8 about-me-text text-center">
-          <h1>About Me</h1>
+        <div class="col-md-6 about-me text-center">
+          <!-- <h1>About Me</h1>
           <p>My name is Salvador Villalon and I am Junior at the University of California, Irvine studying Computer Science. Click on the button to learn how I became interested in technology and one of my favorite quotes that guides me everyday.</p>
+          <a class="btn btn btn-light about-button" href="about.html" role="button">Learn More</a> -->
+          <div class="tag-blue">HELLO, MY NAME IS</div>
+          <br>
+          <h1 class="name-title">Salvador Villalon and I am an Aspiring Software Engineer</h1>
+          <br>
+          <div class="about-text">
+          <p>I’m a Computer Science student at the University of California, Irvine with drive for learning all things Technology.</p>
+          <p>I have a passion for always learning something new. I believe that life is like a video game. As you progress though life you get experience points</p>
+          <p>that help you create and innovate new ideas and applications that help people and organizations move forward.</p>
+          <p>Click on the button to learn how I became interested in technology and one of my favorite quotes that guides me everyday.</p>
           <a class="btn btn btn-light about-button" href="about.html" role="button">Learn More</a>
+        </div>
         </div>
       </div>
     </div>
+
 
 
 
@@ -100,11 +131,12 @@ Salvador Villalon
     <!-- ******************************************* -->
     <div class="experience" id="experience">
       <div class="container-fluid">
-        <strong><p style="color: #FFFFFF; font-size: 45px; text-align: center;">My Experience</p></strong>
+        <!-- <strong><p style="color: #FFFFFF; font-size: 45px; text-align: center;">MY EXPERIENCE</p></strong> -->
+        <div class="tag-white text-center" style="color:white;">MY EXPERIENCE</div>
         <p>Take a look at my experiences here</p>
         <div class="row text-center">
           <div class="col-md-4">
-            <a class="btn btn btn-light experience-button" href="#" role="button">Projects</a>
+            <a class="btn btn btn-light experience-button" href="experience.html" role="button">Projects</a>
           </div>
           <div class="col-md-4">
             <a class="btn btn btn-light experience-button" href="./resources/documents/Villalon_Salvador_Resume.pdf" role="button">Resume</a>
@@ -125,7 +157,8 @@ Salvador Villalon
     <!-- ******************************************* -->
     <div class="contact" id="contact">
       <div class="container-fluid">
-        <strong><p style="color: #0D122B; font-size: 45px; text-align: center;">Contact</p></strong>
+        <!-- <strong><p style="color: #0D122B; font-size: 45px; text-align: center;">Contact</p></strong> -->
+        <div class="tag-blue text-center">CONTACT</div>
         <p>Hey There!</p>
         <br>
         <p>Thanks for visiting my website. I am excited that you want to get in touch with me.</p>
@@ -134,7 +167,8 @@ Salvador Villalon
         <br>
         <p>You can contact me at this email:</p>
         <br>
-        <strong><a href="mailto:salvav1@uci.edu"><p>salvav1@uci.edu</p></a></strong>
+        <p><a class="btn btn btn-light about-button" href="mailto:salvav1@uci.edu" role="button">salvav1@uci.edu</a></p>
+        <!-- <strong><a href="mailto:salvav1@uci.edu"><p>salvav1@uci.edu</p></a></strong> -->
         <br>
         <p>Or find me on these platforms</p>
         <div class="row footer-social-icons text-center" style="margin-bottom: 50px;">
