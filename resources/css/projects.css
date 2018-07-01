@@ -6,6 +6,7 @@
 }
 
 .navbar-default .navbar-nav a {
+ /*font-family: "Open Sans";*/
  font-size: 1.1rem;
  font-weight: bold;
 }
@@ -14,6 +15,24 @@
   nav img {
     display: none;
   }
+}
+
+
+/* ******************************************* */
+/* Experience */
+/* ******************************************* */
+.job-info {
+    list-style-type: none;
+}
+
+.company-name {
+  font-weight: bold;
+  font-size: 20px;
+  color: #0D122B;
+}
+
+.role {
+  /*color: #fdbb07;*/
 }
 
 
@@ -36,31 +55,27 @@
 
 
 /* ******************************************* */
-/* About Me */
+/* Repository Button */
 /* ******************************************* */
-.container-fluid.about-pic {
-  margin-top: 150px;
-  margin-bottom: 50px;
-}
-
-.container-fluid.about-pic img {
-  height: 700px;
-  border-radius: 5%;
-  -webkit-filter: drop-shadow(0.5px 0.5px 10px #000000); /* Safari 6.0 - 9.0 */
-  filter: drop-shadow(0.5px 0.5px 10px #000000);
-}
-
-.container-fluid.about-columns{
-  margin-bottom: 50px;
-}
-.container-fluid.about-columns .about-text {
-  border-right: 3px solid #0D122B;
-}
-
-
-.heading {
+.repo-button {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #0D122B;
+}
+
+
+/* ******************************************* */
+/* SPDJI Experience */
+/* ******************************************* */
+
+/* ******************************************* */
+/* AIP Experience */
+/* ******************************************* */
+.codecademy-container img {
+  /*display: block;
+  margin: 0 auto;*/
+  border-radius: 15px;
 }
 
 .about-button {
@@ -71,59 +86,9 @@
 }
 
 
-
-
-
 /* ******************************************* */
-/* Change Log Table */
+/* Social Icons */
 /* ******************************************* */
-th,td {
-  padding: 10px;
-}
-
-td {
-  border-top: 1px solid #cdd0d4;
-}
-
-.date {
-    font-weight: 450;
-}
-
-
-
-
-
-
-/* ******************************************* */
-/* Footer */
-/* ******************************************* */
-.footer {
-  position: absolute;
-  right: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #0D122B;
-}
-
-footer .footer .fa-linkedin {
-  padding: 10px 14px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s;
-  margin-right: 10px;
-  margin-left: 10px;
-  border-radius: 12px;
-  border: 1px solid #0073a4;
-}
-
-.footer .social-icons a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0px;
-}
-
 .footer-social-icons {
   display: block;
   padding-top: 45px;
@@ -182,4 +147,37 @@ footer .footer .fa-linkedin {
     border: 1px solid #3d5b99;
     border-radius: 12px;
     color: #FFFFFF;
+}
+
+
+/* ******************************************* */
+/* Footer */
+/* ******************************************* */
+.footer {
+  position: absolute;
+  right: 0;
+  /*bottom: 0;*/
+  left: 0;
+  padding: 1rem;
+  background-color: #0D122B;
+}
+
+footer .footer .fa-linkedin {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 12px;
+  border: 1px solid #0073a4;
+  /*color: #0073a4;*/
+}
+
+.footer .social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0px;
 }
