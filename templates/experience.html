@@ -1,0 +1,101 @@
+<!--
+
+personal_website/experience.html
+********************************************************************************
+SALVADOR VILLALON PERSONAL WEBSITE
+projects.html
+
+This page serves as the experience page for Salvador Villalon
+
+
+********************************************************************************
+
+University of California, Irvine
+Salvador Villalon's Personal Projects
+
+Fall 2017
+Continue Summer 2018
+Salvador Villalon
+
+
+ -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Salvador Villalon Personal Website</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type= "text/css" href=" {{ url_for('static', filename='css/experience.css') }}">
+
+  </head>
+  <body>
+
+    {% extends "layout.html" %}
+    {% block content %}
+
+    <!-- ******************************************* -->
+    <!-- Experience -->
+    <!-- ******************************************* -->
+    <br>
+    <div style="margin-top: 120px; margin-left: 10px" class="tag-blue text-center">MY WORK EXPERIENCE</div>
+    <div style="margin-left: 10px; font-size: 25px;"class="tag-white text-center"><a style="color: #0D122B;" href="linkedin.com/in/salvadorvillalon">See More on LinkedIn<a/></div>
+    <br>
+
+    <!-- SPDJI -->
+    <!-- ******************************************* -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 text-center">
+            <img style="height: 100px;" src="{{ url_for('static', filename='images/experiences/spdji/spdji_logo_v1.jpg') }}" alt="S&P Global: Dow Jones Indices">
+        </div>
+
+        <div class="col-md-6">
+          <ul class="job-info">
+            <li class="company-name">S&P Global Dow Jones Indices</li>
+            <li class="role">Software Development Intern</li>
+            <li>New York, NY</li>
+            <li>June 2018 - Present</li>
+            <br>
+            <li>More information about my experience coming soon</li>
+          </ul>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="job-info">
+            <li class="company-name">Student life & Leadership: Administrative Internship Program</li>
+            <li class="role">Administrative Intern (September 2016 - June 2017)</li>
+            <li class="role">Administrative Intern Coordinator & Web Developer (January 2017 - June 2018)</li>
+            <li>Irvine, CA</li>
+            <br>
+            <strong><li>As An Administrative Intern...</li></strong>
+            <!-- <li>Joining this program has been one of the greatest learning experiences I have had. Although the tasks given to me when I started as an Administrative Intern where not relevant to my major, I worked with my boss to find tasks that gave me meaningful technical experience. </li> -->
+            <li>Through this program, I found a deep passion for technology and found a new goal of becoming a Software Engineer. By designing and creating a website of the Administrative Intern program, I was able to provide information about the program to future generations of students at UC Irvine who will be interested in being part of the program. Although creating the website was a small-scale task, I saw the impact it can have on the UCI Community. Because I am very passionate about helping others and making a difference, I saw that a career as a Software Engineer would be perfect. I would be making tools that help others and make a real impact, that’s what I strive to do every day.</li>
+            <br>
+            <strong><li>As An Administrative Intern Coordinator & Web Developer...</li></strong>
+            <li>Apart from being the Admin Intern Coordinator, I am also their first Web Developer. During the hiring process for new Admin Interns, we had a big data collection problem. Data was being collected in various forms, such as Excel sheets, papers, and Google Forms. This made the hiring process unorganized and time-consuming. My job was to create a Web Application where the coordinators and the supervisor can easily access all the candidate information.</li>
+            <li>I design and built a multi-page web application for students to apply to the Admin Intern Program. All the captured and validated information from the Web Application was to be used on the Administrative Tools (Admin Tools) which visualize and centralize all the information from the applicants. The Admin Tools allowed coordinators and the supervisor to check the information of each candidate, set up interviews for the candidates, mark who gets accepted into the program, and other important features.</li>
+            <li>
+        </div>
+
+        <div class="col-md-6 text-center">
+              <img style="height: 200px;" src="{{ url_for('static', filename='images/experiences/aip/admininternlogo.png') }}" alt="Administrative Internship Program">
+        </div>
+      </div>
+    </div> <!-- Div for container-fluid -->
+
+    <br>
+
+  {% endblock %}
+
+  </body>
+</html>

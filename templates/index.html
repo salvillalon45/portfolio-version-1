@@ -1,0 +1,137 @@
+<!--
+
+personal_website/index.html
+********************************************************************************
+SALVADOR VILLALON PERSONAL WEBSITE
+index.html
+
+This page serves Salvador Villalon's personal website
+
+
+********************************************************************************
+
+University of California, Irvine
+Salvador Villalon's Personal Projects
+
+Fall 2017
+Continue Summer 2018
+Salvador Villalon
+
+
+ -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Salvador Villalon Personal Website</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+  </head>
+  <body>
+
+    {% extends "layout.html" %}
+    {% block content %}
+
+    <!-- ******************************************* -->
+    <!-- Jumbotron -->
+    <!-- ******************************************* -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container-fluid">
+        <h1>Hi I'm</h1>
+        <h1>Salvador Villalon</h1>
+      </div>
+    </div>
+
+
+
+
+    <!-- ******************************************* -->
+    <!-- About Me -->
+    <!-- ******************************************* -->
+    <div class="container-fluid" id="about">
+      <div class="row">
+        <div class=" about-me-pic">
+            <img style="float:left; height:600px" class="img-responsive" src="{{ url_for('static', filename='images/height_400_salvador_about_me.png') }}">
+        </div>
+        <div class="col-md-6 about-me text-center">
+          <div class="tag-blue">HELLO, MY NAME IS</div>
+          <br>
+          <h1 class="name-title">Salvador Villalon</h1>
+          <p></p>
+          <h1 class="name-title">I am an Aspiring Software Engineer</h1>
+          <br>
+          <div class="about-text">
+          <p> I am a Computer Science student at the University of California, Irvine. I have a drive for learning all things technology. Being
+            in the Computer Science program has been one of the best decisions I ever made since it allows me to not wait till the classroom to learn
+            something new. With technology always evolving, this means there is always something new to learn. Like <a target="_blank" href='https://youtu.be/JC82Il2cjqA'>Khan Academy once said, you can learn anything</a>.
+            Learning is one of my most important values and this what motivates me everyday </p>
+          <a class="btn btn btn-light about-button" href="about" role="button">Learn More</a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- ******************************************* -->
+    <!-- Experience -->
+    <!-- ******************************************* -->
+    <div class="experience" id="experience">
+      <div class="container-fluid">
+        <div class="tag-white text-center" style="color:white;">MY EXPERIENCE</div>
+        <p>Take a look at my experiences here.</p>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <a class="btn btn btn-light experience-button" href="projects" role="button">Projects</a>
+          </div>
+          <div class="col-md-4">
+            <a class="btn btn btn-light experience-button" href="{{ url_for('static', filename='documents/Villalon_Salvador_Resume.pdf') }}" role="button">Resume</a>
+          </div>
+          <div class="col-md-4">
+            <a class="btn btn-light experience-button" href="experience" role="button">Experience</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- ******************************************* -->
+    <!-- Contact -->
+    <!-- ******************************************* -->
+    <div class="contact" id="contact">
+      <div class="container-fluid">
+        <div class="tag-blue text-center">CONTACT</div>
+        <p>Hey there!</p>
+        <br>
+        <p>Thanks for visiting my website. I am excited that you want to get in touch with me.</p>
+        <br>
+        <p>You can contact me at this email:</p>
+        <br>
+        <p><a class="btn btn btn-light about-button" href="mailto:salvav1@uci.edu" role="button">salvav1@uci.edu</a></p>
+        <br>
+        <p>Or find me on these platforms</p>
+
+        <div class="row footer-social-icons" style="margin-bottom: 50px;">
+          <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/in/salvadorvillalon/" target="_blank" class="social-icon"> <i class="fa fa-linkedin fa-2x"></i></a></li>
+            <li><a href="https://github.com/salvillalon45" target="_blank" class="social-icon"> <i class="fa fa-github fa-2x"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  {% endblock %}
+
+  </bod y>
+</html>

@@ -1,0 +1,185 @@
+/* ******************************************* */
+/* Navigation Bar and Header */
+/* ******************************************* */
+.navbar {
+  background-color: blue;
+}
+
+.navbar-default .navbar-nav a {
+ font-size: 1.1rem;
+ font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  nav img {
+    display: none;
+  }
+}
+
+
+/* ******************************************* */
+/* Title Headers */
+/* ******************************************* */
+.tag-blue {
+  color: #fdbb07;
+  font-size: 45px;
+  font-weight:bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tag-white {
+  font-size: 45px;
+  font-weight: bold;
+  color: #0D122B;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ******************************************* */
+/* About Me */
+/* ******************************************* */
+.container-fluid.about-pic {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.container-fluid.about-pic img {
+  height: 700px;
+  border-radius: 5%;
+  -webkit-filter: drop-shadow(0.5px 0.5px 10px #000000); /* Safari 6.0 - 9.0 */
+  filter: drop-shadow(0.5px 0.5px 10px #000000);
+}
+
+.container-fluid.about-columns{
+  margin-bottom: 50px;
+}
+.container-fluid.about-columns .about-text {
+  border-right: 3px solid #0D122B;
+}
+
+
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about-button {
+  font-size: 20px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #0D122B;
+}
+
+
+
+
+
+/* ******************************************* */
+/* Change Log Table */
+/* ******************************************* */
+th,td {
+  padding: 10px;
+}
+
+td {
+  border-top: 1px solid #cdd0d4;
+}
+
+.date {
+    font-weight: 450;
+}
+
+
+
+
+
+
+/* ******************************************* */
+/* Footer */
+/* ******************************************* */
+/*.footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #0D122B;
+}
+
+footer .footer .fa-linkedin {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 12px;
+  border: 1px solid #0073a4;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0px;
+}
+
+.footer-social-icons {
+  display: block;
+  padding-top: 45px;
+}
+
+.social-icons {
+  color: #fff;
+}
+
+.social-icons li {
+  display: inline;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+}
+
+
+.fa-linkedin {
+  padding: 10px 14px;
+  margin-right: 20px;
+  margin-left: -50px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 12px;
+  border: 1px solid #0073a4;
+  color: #0073a4;
+}
+
+.fa-linkedin:hover {
+  background-color: #0073a4;
+  border: 1px solid #3d5b99;
+  border-radius: 12px;
+  color: #FFFFFF;
+}
+
+.fa-github {
+    padding: 10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    border: 1px solid #3d5b99;
+    border-radius: 12px;
+    color: #3d5b99;
+}
+
+.fa-github:hover {
+    background-color: #3d5b99;
+    border: 1px solid #3d5b99;
+    border-radius: 12px;
+    color: #FFFFFF;
+}*/

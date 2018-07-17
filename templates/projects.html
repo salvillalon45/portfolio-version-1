@@ -1,0 +1,247 @@
+<!--
+
+personal_website/projects.html
+********************************************************************************
+SALVADOR VILLALON PERSONAL WEBSITE
+projects.html
+
+This page serves as the projects page for Salvador Villalon
+
+
+********************************************************************************
+
+University of California, Irvine
+Salvador Villalon's Personal Projects
+
+Fall 2017
+Continue Summer 2018
+Salvador Villalon
+
+
+ -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Salvador Villalon Personal Website</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/projects.css') }}">
+
+  </head>
+  <body>
+
+    {% extends "layout.html" %}
+    {% block content %}
+
+    <!-- ******************************************* -->
+    <!-- Presentations-->
+    <!-- ******************************************* -->
+    <br>
+    <div style="margin-top: 120px; margin-left: 10px" class="tag-blue">PRESENTATIONS</div>
+    <br>
+
+    <div class="container-fluid presentations">
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="image-container-presentation">
+            <a target="_blank" href="https://docs.google.com/presentation/d/1q49T2u_NwVEt4A_BmQN6a02vNmzLv07luFq2vE5uVys/edit?usp=sharing">
+              <img style="height: 200px; width: 450px;" src="{{url_for('static', filename='images/projects/presentations/trio/first_gen_pres/Capture.PNG') }}" alt="First Generation Presentation to Faculty and Staff"/>
+            </a>
+          </div>
+          <p>
+            A presentation on my experiences
+            as a First Gen. Student at UC Irivne to First Gen. Faculty and Staff
+          </p>
+        </div>
+
+        <div class="col-md-4">
+         <div class="image-container-presentation">
+           <a target="_blank" href="https://docs.google.com/presentation/d/1V_RolL95yPSuzB-5IayL8PvepNmqflRpIU3eNZv1tA8/edit?usp=sharing">
+             <img style="height: 200px; width: 450px;" src="{{url_for('static', filename='images/projects/presentations/trio/time/Capture1.PNG') }}" alt="Time Management Workshop"/>
+           </a>
+           <p>
+             A presentation to Freshman and Sophomores about how to effectively manage
+             their time
+           </p>
+         </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="image-container-presentation">
+            <a target="_blank" href="https://docs.google.com/presentation/d/1Hj0Gd-8nNFPfL3q12TVMde117NGqI71HFs2jsjLnsQo/edit?usp=sharing">
+              <img style="height: 200px; width: 450px;" src="{{url_for('static', filename='images/projects/presentations/admin_intern/Capture.PNG') }}" alt="Life Lessons with Sal Presentation"/>
+            </a>
+            <p>
+              A presentation on Life Lessons that I have learned and have helped me succeed
+            </p>
+          </div>
+        </div>
+
+      </div>
+  </div>  <!-- Div for container-fluid presentation -->
+
+
+   <!-- ******************************************* -->
+   <!-- Codecademy Projects -->
+   <!-- ******************************************* -->
+   <br>
+   <br>
+   <div style="margin-left: 10px" class="tag-blue">CODECADEMY PROJECTS</div>
+   <br>
+
+   <div class="container-fluid codecademy">
+
+     <!-- Row 1 -->
+     <!-- ******************************************* -->
+     <div class="row">
+
+       <!-- Fotomatic -->
+       <!-- ******************************************* -->
+       <div class="col-md-4">
+         <div class="codecademy-container">
+           <a target="_blank" href="https://salvillalon45.github.io/codecademy-capstoneFotomaticProject/F1C1_start/">
+             <img style="height: 200px; width: 450px;" src="{{url_for('static', filename='images/projects/codecademy/fotomatic/Capture.PNG') }}" alt="Codecademy: Fotomatic Project"/>
+           </a>
+           <p>[Codecademy Course: Build Websites From Scratch] - Project: Fotomatic</p>
+           <p><a class="btn btn btn-light repo-button" target="_blank" href="https://github.com/salvillalon45/codecademy-capstoneFotomaticProject" role="button">Repository</a></p>
+
+         </div>
+       </div>
+
+       <!-- Jumpstart -->
+       <!-- ******************************************* -->
+       <div class="col-md-4">
+         <div class="codecademy-container">
+           <a target="_blank" href="https://salvillalon45.github.io/codecademy-jumpstart/">
+             <img style="height: 200px; width: 450px;" src="{{url_for('static', filename='images/projects/codecademy/jumpstart/Capture.PNG') }}" alt="Codecademy: Jumpstart Project"/>
+           </a>
+           <p>[Codecademy Course: Build Websites From Scratch] - Project: Jumpstart</p>
+           <p><a class="btn btn btn-light repo-button" target="_blank" href="https://github.com/salvillalon45/codecademy-jumpstart" role="button">Repository</a></p>
+
+         </div>
+       </div>
+
+       <!-- Secret Agent Supply -->
+       <!-- ******************************************* -->
+       <div class="col-md-4">
+         <div class="codecademy-container">
+           <a target="_blank" href="https://salvillalon45.github.io/codecademy-secretAgentSupply/index.html">
+             <img style="height: 200px; width: 450px;" src="{{url_for('static', filename='images/projects/codecademy/agent/Capture.PNG') }}" alt="Codecademy: Secret Agent Supply"/>
+           </a>
+           <p>[Codecademy Course: Build Websites From Scratch] - Project: Secret Agent Supply</p>
+           <p><a class="btn btn btn-light repo-button" target="_blank" href="https://github.com/salvillalon45/codecademy-jumpstart" role="button">Repository</a><p>
+        </div>
+      </div>
+     </div> <!-- Div for Row 1 -->
+
+     <br>
+     <br>
+     <br>
+     <br>
+
+      <!-- Row 2-->
+      <!-- ******************************************* -->
+      <div class="row">
+
+        <!-- Tea Cozy -->
+        <!-- ******************************************* -->
+        <div class="col-md-4">
+          <div class="codecademy-container">
+            <a target="_blank" href="https://salvillalon45.github.io/codecademy-teaCozy/index.html">
+              <img style="height: 200px; width: 450px;" src="{{url_for('static', filename='images/projects/codecademy/tea_cozy/Capture.PNG') }}" alt="Codecademy: Tea Cozy Project"/>
+            </a>
+            <p>[Codecademy Course: Build Websites From Scratch] - Project: Tea Cozy</p>
+            <p><a class="btn btn btn-light repo-button" target="_blank" href="https://github.com/salvillalon45/codecademy-teaCozy" role="button">Repository</a><p>
+          </div>
+        </div>
+
+        <!-- Tortoise Shell Optics -->
+        <!-- ******************************************* -->
+        <div class="col-md-4">
+          <div class="codecademy-container">
+            <a target="_blank" href="https://salvillalon45.github.io/codecademy-tortoiseshellOptics/">
+              <img style="height: 200px; width: 450px;" src="{{url_for('static', filename='images/projects/codecademy/shell_optics/Capture.PNG') }}" alt="Codecademy: Tortoise Shell Optics Project"/>
+            </a>
+            <p>[Codecademy Course: Build Websites From Scratch] - Project: Tortoiseshell Optics</p>
+            <p><a class="btn btn btn-light repo-button" target="_blank" href="https://github.com/salvillalon45/codecademy-tortoiseshellOptics" role="button">Repository</a><p>
+          </div>
+        </div>
+
+        <!-- Colmar Academy -->
+        <!-- ******************************************* -->
+        <div class="col-md-4">
+          <div class="codecademy-container">
+            <a target="_blank" href="https://salvillalon45.github.io/codecademy-capstoneColmarAcademy/capstone_colmar_assets/">
+              <img style="height: 200px; width: 450px;" src="{{url_for('static', filename='images/projects/codecademy/colmar/Capture.PNG') }}" alt="Codecademy: Colmar Project"/>
+            </a>
+            <p>[Codecademy Course: Build Websites From Scratch] - Project: Colmar Academy</p>
+            <p><a class="btn btn btn-light repo-button" target="_blank" href="https://github.com/salvillalon45/codecademy-capstoneColmarAcademy" role="button">Repository</a><p>
+          </div>
+        </div>
+      </div> <!-- Div for Row 2 -->
+  </div> <!-- Div for container-fluid codecademy -->
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- ******************************************* -->
+  <!-- FreeCodeCamp Projects -->
+  <!-- ******************************************* -->
+  <br>
+  <div style="margin-left: 10px" class="tag-blue">FREE CODE CAMP PROJECTS</div>
+  <br>
+
+  <div class="container-fluid freecodecamp">
+    <div class="row">
+
+      <!-- Tribute Page -->
+      <!-- ******************************************* -->
+      <div class="col-md-4">
+        <div class="freecodecamp-container">
+          <a target="_blank" href="https://salvillalon45.github.io/freecodecamp-sherwynnTributepage/">
+            <img style="height: 200px; width: 450px;" src="{{url_for('static', filename='images/projects/freecodecamp/tribute_page/Capture.PNG') }}" alt="Free Code Camp: Tribute Page Project"/>
+          </a>
+          <p>[FreeCodeCamp: Responsive Web Design Certification] - Project: Tribute Page</p>
+          <p><a class="btn btn btn-light repo-button" target="_blank" href="https://github.com/salvillalon45/freecodecamp-sherwynnTributepage" role="button">Repository</a></p>
+        </div>
+      </div>
+
+      <!-- Random Quote Generator -->
+      <!-- ******************************************* -->
+      <div class="col-md-4">
+        <div class="freecodecamp-container">
+          <a target="_blank" href="https://salvillalon45.github.io/freecodecamp-randomQuoteGeneratorV2/">
+            <img style="height: 200px; width: 450px;" src="{{url_for('static', filename='images/projects/freecodecamp/random_quote/Capture.PNG') }}" alt="Free Code Camp: Tribute Page Project"/>
+          </a>
+          <p>[FreeCodeCamp: Responsive Web Design Certification] - Project: Random Quote Generator</p>
+          <p><a class="btn btn btn-light repo-button" target="_blank" href="https://github.com/salvillalon45/freecodecamp-randomQuoteGeneratorV2" role="button">Repository</a></p>
+       </div>
+     </div>
+
+     <!-- Personal Website -->
+     <!-- ******************************************* -->
+     <div class="col-md-4">
+       <div class="freecodecamp-container">
+         <a target="_blank" href="https://salvillalon45.github.io/salvadorvillalon/">
+           <img style="height: 200px; width: 450px;" src="{{url_for('static', filename='images/projects/freecodecamp/personal/Capture.PNG') }}" alt="Free Code Camp: Personal Website Project"/>
+         </a>
+         <p>[FreeCodeCamp: Responsive Web Design Certification] - Project: Personal Website</p>
+         <p><a class="btn btn btn-light repo-button" target="_blank" href="https://github.com/salvillalon45/salvadorvillalon" role="button">Repository</a></p>
+       </div>
+     </div>
+
+   </div> <!-- Div for Row -->
+ </div> <!-- Div for container-fluid freecodecamp -->
+
+    {% endblock %}
+
+  </body>
+</html>

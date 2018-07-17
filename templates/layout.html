@@ -1,0 +1,109 @@
+<!--
+
+personal_website/layout.html
+********************************************************************************
+SALVADOR VILLALON PERSONAL WEBSITE
+projects.html
+
+This page serves as template for the rest of the pages
+
+
+********************************************************************************
+
+University of California, Irvine
+Salvador Villalon's Personal Projects
+
+Fall 2017
+Continue Summer 2018
+Salvador Villalon
+
+
+ -->
+
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset="utf-8">
+     <title>Salvador Villalon</title>
+
+     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+   </head>
+   <body>
+
+     <!-- ******************************************* -->
+     <!-- Navigation Bar and Header -->
+     <!-- ******************************************* -->
+     <nav class="navbar fixed-top  navbar-light" style="background-color: #FFFFFF;">
+
+         <div class="navbar-header">
+           <a href="{{ url_for('index') }}">
+             <img src="{{url_for('static', filename='images/rsz_2salvador_villalon_logo_no_background.png')}}" class="navbar-brand navbar-right navbar-collapse">
+           </a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+         </div>
+
+       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+         <ul class="nav navbar-nav">
+           <li class="nav-item nav-link"><a href="{{ url_for('about') }}">About</a></li>
+           <li class="nav-item nav-link"><a href="{{ url_for('experience') }}">Experience</a></li>
+           <li class="nav-item nav-link"><a href="{{ url_for('projects') }}">Projects</a></li>
+         </ul>
+       </div>
+
+     </nav>
+     <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #FFFFFF;">
+     <a href="index.html" class="navbar-brand">
+        <img src="{{url_for('static', filename='images/rsz_2salvador_villalon_logo_no_background.png')}}" class="navbar-brand navbar-right navbar-collapse">
+     </a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon">
+       </span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+       <div class="navbar-nav">
+         <a class="nav-item nav-link"><a href="{{ url_for('about') }}">About</a>
+         <a class="nav-item nav-link"><a href="{{ url_for('experience') }}">Experience</a>
+         <a class="nav-item nav-link"><a href="{{ url_for('projects') }}">Projects</a>
+       </div>
+     </div>
+   </nav> -->
+
+
+
+
+     <!-- ******************************************* -->
+     <!-- Connecting the pages -->
+     <!-- ******************************************* -->
+     {% block content %}
+     {% endblock %}
+
+
+     <!-- ******************************************* -->
+     <!-- Footer -->
+     <!-- ******************************************* -->
+     <footer>
+       <div class="footer">
+         <div class="footer-social-icons">
+           <ul class="social-icons">
+             <li><strong><span>&copy; 2017 Made by Salvador Villalon</span></strong</li>
+             <li><a href="https://www.linkedin.com/in/salvadorvillalon/" target="_blank" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+             <li><a href="https://github.com/salvillalon45" target="_blank" class="social-icon"> <i class="fa fa-github"></i></a></li>
+           </ul>
+         </div>
+       </div>
+     </footer>
+
+   </body>
+ </html>

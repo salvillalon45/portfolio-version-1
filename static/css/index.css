@@ -1,0 +1,89 @@
+/* ******************************************* */
+/* Jumbotron */
+/* ******************************************* */
+.jumbotron.jumbotron-fluid {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-image: url("../images/jumbotron_1_black_overlay.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+
+.jumbotron h1 {
+  font-size: 130px;
+}
+
+
+/* ******************************************* */
+/* About Me */
+/* ******************************************* */
+#about {
+  margin-top: -33px;
+}
+
+.name-title {
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid .about-me {
+  color: #0D122B;
+  padding-top: 50px;
+  margin: 0px auto;
+}
+
+.about-button.btn-light {
+  font-size: 20px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #0D122B;
+}
+
+
+/* ******************************************* */
+/* Experience */
+/* ******************************************* */
+.experience  {
+  padding-top: 50px;
+  padding-bottom: 200px;
+  height: 300px;
+  background-color: #0D122B;
+}
+
+.experience p {
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+}
+
+.experience .row{
+  margin-top: 50px;
+}
+
+.experience-button.btn-light {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* ******************************************* */
+/* Contact */
+/* ******************************************* */
+.contact {
+  margin-top: 50px;
+}
+
+.contact p {
+  color: #0D122B;
+  font-size: 20px;
+  text-align: center;
+}
+
+.row.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+}
