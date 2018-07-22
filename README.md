@@ -1,4 +1,4 @@
-# Salvadorvillalon
+# Salvador Villalon Personal Website
 [FreeCodeCamp: Responsive Web Design Certification] - Project: Personal Website
 - A Web Application that shows who I am and the work I have done
 
