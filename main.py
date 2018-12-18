@@ -3,8 +3,11 @@ import os
 
 app = Flask(__name__)
 
-
 @app.route("/")
+def redirect():
+    return render_template("redirect.html")
+
+@app.route("/index/")
 def index():
     print("HERE INDEX")
     return render_template("index.html")
@@ -28,4 +31,4 @@ def favicon():
 
 if __name__ == "__main__":
     # app.run(debug=True)
-    app.run(debug=True, port=8002, host='0.0.0.0')
+    app.run(debug=True, port=8002)

@@ -43,7 +43,9 @@ Salvador Villalon
      <!-- ******************************************* -->
      <!-- Navigation Bar and Header -->
      <!-- ******************************************* -->
-     <nav class="navbar fixed-top  navbar-light" style="background-color: #FFFFFF;">
+
+     <!-- followed by a responsive collapsing class: .navbar-expand-xl|lg|md|sm (stacks the navbar vertically on extra large, large, medium or small screens) -->
+     <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #FFFFFF;">
 
          <div class="navbar-header">
            <a href="{{ url_for('index') }}">
@@ -55,7 +57,7 @@ Salvador Villalon
          </div>
 
        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-         <ul class="nav navbar-nav">
+         <ul class="nav navbar-nav ml-auto">
            <li class="nav-item nav-link"><a href="{{ url_for('about') }}">About</a></li>
            <li class="nav-item nav-link"><a href="{{ url_for('experience') }}">Experience</a></li>
            <li class="nav-item nav-link"><a href="{{ url_for('projects') }}">Projects</a></li>
@@ -63,24 +65,6 @@ Salvador Villalon
        </div>
 
      </nav>
-     <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #FFFFFF;">
-     <a href="index.html" class="navbar-brand">
-        <img src="{{url_for('static', filename='images/rsz_2salvador_villalon_logo_no_background.png')}}" class="navbar-brand navbar-right navbar-collapse">
-     </a>
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon">
-       </span>
-     </button>
-     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-       <div class="navbar-nav">
-         <a class="nav-item nav-link"><a href="{{ url_for('about') }}">About</a>
-         <a class="nav-item nav-link"><a href="{{ url_for('experience') }}">Experience</a>
-         <a class="nav-item nav-link"><a href="{{ url_for('projects') }}">Projects</a>
-       </div>
-     </div>
-   </nav> -->
-
-
 
 
      <!-- ******************************************* -->

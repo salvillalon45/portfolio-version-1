@@ -1,0 +1,23 @@
+html, body {
+  height: 100%;
+}
+
+.redirect {
+  background-image: url("../images/redirect/city.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+
+}
+
+.redirect .text {
+  font-family: monospace;
+  color: white;
+  background-color: black;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}

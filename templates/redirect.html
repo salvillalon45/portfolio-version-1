@@ -1,0 +1,66 @@
+<!--
+
+personal_website/layout.html
+********************************************************************************
+SALVADOR VILLALON PERSONAL WEBSITE
+redirect.html
+
+This page serves as the page to redirect them to my new website
+
+
+********************************************************************************
+
+University of California, Irvine
+Salvador Villalon's Personal Projects
+
+Fall 2017
+Continue Summer 2018
+Salvador Villalon
+
+
+ -->
+
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset="utf-8">
+     <title>Salvador Villalon</title>
+
+     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/redirect.css') }}">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+
+
+   </head>
+   <body>
+
+     <div class="redirect">
+       <div class="text container">
+         <div class="row">
+           <div class="col-md-12 text-center">
+             <p>Thanks for visiting my site!</p>
+             <p>You are viewing the first version of my website which means it is not being updated</p>
+             <p>I recommend to go to my new website</p>
+             <p><a class="btn btn btn-light about-button" href="https://salvillalon45.github.io/" role="button">New Website</a></p>
+             <p><a class="btn btn btn-light about-button" href="http://salvador-villalon.appspot.com/index/" role="button">Proceed to old website</a></p>
+           </div>
+         </div>
+         <!-- <div class="row">
+           <div class="col-md-12">
+
+           </div>
+         </div> -->
+       </div>
+
+     </div>
+
+   </body>
+ </html>
